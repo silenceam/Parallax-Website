@@ -10,6 +10,15 @@
   color: #fff;
 }
 
+::-webkit-scrollbar{
+    width: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #194eb9;
+    border-radius: 2rem;
+}
+
 body {
   background: #000;
   overflow-x: hidden;
@@ -24,6 +33,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 10%;
+  z-index: 1000;
 }
 
 header .logo {
@@ -82,4 +92,24 @@ section img{
     width: 100%;
     object-fit: cover;
     pointer-events: none;
+}
+
+section img#purple,
+#moon {
+    mix-blend-mode: screen;
+}
+
+.underGround{
+    position: relative;
+    padding: 100px;
+    background: #000;
+}
+
+.underGround h2{
+    font-size: 3em;
+    margin-bottom: 1rem;
+}
+
+.underGround p{
+    font-size: 1em;
 }
